@@ -50,8 +50,8 @@ export const lounge = {
     },
   ] as const,
   operator: {
-    company: "One Three Four Company s.r.o.",
-    address: "Palackého náměstí 618/24, Plzeň, 30100",
+    company: "Melero s.r.o.",
+    address: "Palackého 70/1, Jižní Předměstí, 30100 Plzeň",
     ico: "07522118",
   },
 };
