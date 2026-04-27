@@ -73,7 +73,7 @@
         },
         "hookah": {
           "title": "<highlight>Wasserpfeifen</highlight> mit schwarzem und hellem Tabak",
-          "description": "Premium-Tabake von Darkside, Element, Tanger. Sie haben viele Geschmacksrichtungen zur Auswahl.",
+          "description": "Premium-Tabake von Darkside, Element, Tangiers. Sie haben viele Geschmacksrichtungen zur Auswahl.",
           "badges": {
             "light": "Leichter Tabak",
             "dark": "Schwarzer Tabak"
@@ -91,7 +91,7 @@
         },
         "drinks": {
           "title": "<highlight>Cocktails</highlight> und hausgemachte Limonaden",
-          "description": "Auswahl aus über 30 der besten Cocktails, Variationsmöglichkeit. Hochwertige, dicke hausgemachte Limonaden, die Sie sonst nirgendwo bekommen.",
+          "description": "Auswahl aus über 30 der besten Cocktails, Variationsmöglichkeit. Hochwertige hausgemachte Limonaden, die Sie sonst nirgendwo bekommen.",
           "badges": {
             "lemonades": "Hausgemachte Limonaden",
             "cocktails": "Cocktails"
