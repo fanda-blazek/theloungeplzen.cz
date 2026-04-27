@@ -8,7 +8,7 @@
     },
     "localeSwitcher": {
       "label": "Změnit jazyk",
-      "locale": "{locale, select, cs {Čeština} en {English} other {Neznámý jazyk}}"
+      "locale": "{locale, select, cs {Čeština} en {English} de {Deutsch} ru {Русский} other {Neznámý jazyk}}"
     },
     "notFound": {
       "code": "404",
@@ -20,68 +20,107 @@
   "layout": {
     "metadata": {
       "title": "The Lounge Plzeň",
-      "description": "Stylový lounge bar v Plzni pro večery, oslavy a soukromé akce."
+      "description": "The Lounge - shisha bar, kde si vyberete z bohaté nabídky vodních dýmek a nápojů. Najdete nás historickém centru Plzně jen pár kroků od náměstí Republiky."
     },
     "header": {
       "homeAriaLabel": "Domovská stránka",
+      "phoneAriaLabel": "Zavolat pro rezervaci",
       "menu": {
         "openAriaLabel": "Otevřít menu",
-        "title": "Menu",
+        "title": "Hlavní navigace",
         "close": "Zavřít menu"
       }
     },
     "navigation": {
       "items": {
-        "home": "Úvod",
-        "experience": "Zážitek",
-        "reservation": "Rezervace"
+        "about": "O nás",
+        "offerings": "Nabídka",
+        "openingHours": "Otevírací doba",
+        "address": "Adresa",
+        "contact": "Kontakt"
       }
     },
     "footer": {
-      "description": "Komorní lounge v Plzni pro drinky, setkání a soukromé akce.",
-      "copyright": "Copyright © {year} {company}. Všechna práva vyhrazena.",
-      "navigationLabel": "Navigace v patičce",
-      "navigationTitle": "Menu",
-      "contactTitle": "Kontakt",
-      "languageTitle": "Jazyk",
-      "email": "info@theloungeplzen.cz",
-      "emailHref": "mailto:info@theloungeplzen.cz",
-      "location": "Plzeň, Česká republika"
+      "copyright": "© {year} The Lounge",
+      "rights": "Všechna práva vyhrazena",
+      "operatorInfo": "Informace o provozovateli",
+      "companyId": "IČO: {ico}",
+      "scrollTop": "Posunout nahoru"
     }
   },
   "pages": {
     "home": {
       "hero": {
-        "eyebrow": "Lounge bar v Plzni",
-        "title": "Večer, který má<break></break>vlastní tempo",
-        "description": "The Lounge Plzeň je komorní prostor pro drinky, setkání a soukromé akce. Přijďte na pohodový večer nebo si domluvte rezervaci pro vaši skupinu.",
-        "primaryAction": "Rezervovat místo",
-        "secondaryAction": "Prohlédnout prostor",
-        "imageAlt": "Atmosféra lounge baru The Lounge Plzeň"
+        "addressAriaLabel": "Zobrazit adresu na mapě",
+        "title": "The Lounge<break></break>Plzeň",
+        "scrollDown": "Posunout dolů",
+        "imageAlt": "Interiér shisha baru The Lounge Plzeň"
       },
-      "experience": {
-        "eyebrow": "Zážitek",
-        "title": "Jednoduchý web, který představí atmosféru podniku bez zbytečné aplikace navíc."
-      },
-      "highlights": {
-        "atmosphere": {
-          "title": "Atmosféra",
-          "description": "Klidnější lounge prostředí pro dlouhé večery, oslavy i neformální schůzky."
-        },
-        "location": {
-          "title": "Plzeň",
-          "description": "Lokální podnik s jasnou prezentací, kontaktem a jazykovými verzemi."
-        },
-        "events": {
-          "title": "Akce",
-          "description": "Prostor připravený pro rezervace, soukromé oslavy a menší skupiny."
+      "about": {
+        "description": "Zažijte nezapomenutelné chvíle v shisha baru The Lounge, který Vás zaujme nejen svým interiérem, ale i bohatou nabídkou vodních dýmek a nápojů. Najdete nás historickém centru Plzně jen pár kroků od náměstí Republiky.",
+        "features": {
+          "wifi": "Free wifi",
+          "card": "Platby kartou",
+          "cash": "Platby hotově"
         }
       },
-      "reservation": {
-        "title": "Domluvte si rezervaci",
-        "description": "Landing page je připravená pro doplnění aktuálního kontaktu, otevírací doby a rezervačního odkazu.",
-        "action": "Napsat e-mail",
-        "href": "mailto:info@theloungeplzen.cz"
+      "offerings": {
+        "food": {
+          "title": "<highlight>Hot dogy</highlight> a hranolky",
+          "description": "Široký výběr hot dogů a hranolek. Stáhněte si naše menu a prohlédněte si kompletní nabídku.",
+          "action": "Stáhnout menu",
+          "imageAlt": "Jídla v The Lounge"
+        },
+        "hookah": {
+          "title": "<highlight>Vodní dýmky</highlight> s černým i světlým tabákem",
+          "description": "Prémiové tabáky značky Darkside, Element, Tangiers. Na výběr máte z mnoha příchutí.",
+          "badges": {
+            "light": "Světlý tabák",
+            "dark": "Černý tabák"
+          },
+          "imageAlt": "Interiér The Lounge s vodními dýmkami"
+        },
+        "alcohol": {
+          "title": "<highlight>Prémiové</highlight> druhy alkoholu a vín",
+          "description": "Od levnějších po dražší rumy, whiskey, giny, vodky a další destiláty všeho druhu. Nechybí ani prémiová jihoafrická vína značky Phant.",
+          "badges": {
+            "alcohol": "Prémiový alkohol",
+            "wine": "Kvalitní vína"
+          },
+          "imageAlt": "Bar a nabídka alkoholu v The Lounge"
+        },
+        "drinks": {
+          "title": "<highlight>Koktejly</highlight> a domácí limonády",
+          "description": "Výběr z více než 30ti těch nejlepších koktejlů, možnost variace. Kvalitní domácí limonády, které jinde nedostanete.",
+          "badges": {
+            "lemonades": "Domácí limonády",
+            "cocktails": "Koktejly"
+          },
+          "imageAlt": "Koktejly a domácí limonády v The Lounge"
+        }
+      },
+      "openingHours": {
+        "title": "Otevírací doba",
+        "monday": "Pondělí",
+        "tuesday": "Úterý",
+        "wednesday": "Středa",
+        "thursday": "Čtvrtek",
+        "friday": "Pátek",
+        "saturday": "Sobota",
+        "sunday": "Neděle"
+      },
+      "contact": {
+        "title": "Kontaktujte nás",
+        "address": "Adresa",
+        "addressAction": "Navigovat",
+        "phone": "Telefon / rezervace",
+        "phoneAction": "Zavolat",
+        "mapTitle": "Mapa adresy The Lounge"
+      },
+      "follow": {
+        "title": "Sledujte nás",
+        "instagramAriaLabel": "Instagram The Lounge",
+        "facebookAriaLabel": "Facebook The Lounge"
       }
     }
   }

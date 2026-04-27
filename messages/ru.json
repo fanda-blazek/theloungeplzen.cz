@@ -1,0 +1,127 @@
+{
+  "common": {
+    "error": {
+      "eyebrow": "Ошибка",
+      "title": "Что-то пошло не так",
+      "description": "На этой странице произошла неожиданная ошибка.",
+      "retry": "Повторить"
+    },
+    "localeSwitcher": {
+      "label": "Изменить язык",
+      "locale": "{locale, select, cs {Čeština} en {English} de {Deutsch} ru {Русский} other {Неизвестно}}"
+    },
+    "notFound": {
+      "code": "404",
+      "title": "Не найдено",
+      "description": "Мы не смогли найти страницу, которую вы ищете.",
+      "goHome": "На главную страницу"
+    }
+  },
+  "layout": {
+    "metadata": {
+      "title": "The Lounge Pilsen",
+      "description": "The Lounge - кальян-бар, где можно выбрать из богатого ассортимента кальянов и напитков. Вы найдете нас в историческом центре города Пльзень, всего в нескольких шагах от площади Республики."
+    },
+    "header": {
+      "homeAriaLabel": "Главная страница",
+      "phoneAriaLabel": "Позвонить для бронирования",
+      "menu": {
+        "openAriaLabel": "Открыть меню",
+        "title": "Главная навигация",
+        "close": "Закрыть меню"
+      }
+    },
+    "navigation": {
+      "items": {
+        "about": "О нас",
+        "offerings": "Предложение",
+        "openingHours": "Часы работы",
+        "address": "Адрес",
+        "contact": "Контакт"
+      }
+    },
+    "footer": {
+      "copyright": "© {year} The Lounge",
+      "rights": "Все права защищены",
+      "operatorInfo": "Информация об операторе",
+      "companyId": "Идентификационный номер: {ico}",
+      "scrollTop": "Прокрутить вверх"
+    }
+  },
+  "pages": {
+    "home": {
+      "hero": {
+        "addressAriaLabel": "Показать адрес на карте",
+        "title": "The Lounge<break></break>Pilsen",
+        "scrollDown": "Прокрутить вниз",
+        "imageAlt": "Интерьер кальян-бара The Lounge Pilsen"
+      },
+      "about": {
+        "description": "Испытайте незабываемые моменты в кальян-баре The Lounge, который покорит вас не только своим интерьером, но и богатым выбором кальянов и напитков. Вы найдете нас в историческом центре города Пльзень, всего в нескольких шагах от площади Республики (náměstí Republiky).",
+        "features": {
+          "wifi": "Бесплатный вай-фай",
+          "card": "Карточные платежи",
+          "cash": "Оплата наличными"
+        }
+      },
+      "offerings": {
+        "food": {
+          "title": "<highlight>Хот-доги</highlight> и картофель фри",
+          "description": "Широкий выбор хот-догов и картофеля фри. Скачайте наше меню и посмотрите полное предложение.",
+          "action": "Скачать меню",
+          "imageAlt": "Еда в The Lounge"
+        },
+        "hookah": {
+          "title": "<highlight>Кальяны</highlight> с черным и светлым табаком",
+          "description": "Премиум табаки Darkside, Element, Tangiers. Вы можете выбрать из множества вкусов.",
+          "badges": {
+            "light": "Легкий табак",
+            "dark": "Черный табак"
+          },
+          "imageAlt": "Интерьер The Lounge с кальянами"
+        },
+        "alcohol": {
+          "title": "<highlight>Качественные</highlight> виды алкоголя и вин",
+          "description": "От более дешевых до более дорогих ромов, виски, джинов, водки и других спиртных напитков всех видов. Также есть элитные южноафриканские вина марки Phant.",
+          "badges": {
+            "alcohol": "Премиум алкоголь",
+            "wine": "Качественные вина"
+          },
+          "imageAlt": "Бар и алкогольное предложение в The Lounge"
+        },
+        "drinks": {
+          "title": "<highlight>Коктейли</highlight> и домашние лимонады",
+          "description": "Выбор более 30 лучших коктейлей, возможность вариации. Качественные домашние лимонады, которые больше нигде не купишь.",
+          "badges": {
+            "lemonades": "Домашние лимонады",
+            "cocktails": "Коктейли"
+          },
+          "imageAlt": "Коктейли и домашние лимонады в The Lounge"
+        }
+      },
+      "openingHours": {
+        "title": "Часы работы",
+        "monday": "понедельник",
+        "tuesday": "вторник",
+        "wednesday": "среда",
+        "thursday": "Четверг",
+        "friday": "Пятница",
+        "saturday": "Суббота",
+        "sunday": "Воскресенье"
+      },
+      "contact": {
+        "title": "Связаться с нами",
+        "address": "Адрес",
+        "addressAction": "Навигация",
+        "phone": "Телефон / бронирование",
+        "phoneAction": "Позвонить",
+        "mapTitle": "Карта адреса The Lounge"
+      },
+      "follow": {
+        "title": "Смотрите нас",
+        "instagramAriaLabel": "Instagram The Lounge",
+        "facebookAriaLabel": "Facebook The Lounge"
+      }
+    }
+  }
+}

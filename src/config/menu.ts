@@ -1,10 +1,11 @@
 export type LandingMenuLink = {
-  labelKey: "home" | "experience" | "reservation";
-  href: "#top" | "#experience" | "#reservation";
+  labelKey: "about" | "offerings" | "openingHours" | "address" | "contact";
+  href: "#o-nas" | "#nabidka" | "#oteviraci-doba" | "#kontakt";
 };
 
 export const landingMenu = [
-  { labelKey: "home", href: "#top" },
-  { labelKey: "experience", href: "#experience" },
-  { labelKey: "reservation", href: "#reservation" },
+  { labelKey: "offerings", href: "#nabidka" },
+  { labelKey: "openingHours", href: "#oteviraci-doba" },
+  { labelKey: "address", href: "#kontakt" },
+  { labelKey: "contact", href: "#kontakt" },
 ] as const satisfies LandingMenuLink[];

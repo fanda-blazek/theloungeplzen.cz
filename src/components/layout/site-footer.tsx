@@ -1,69 +1,42 @@
 "use client";
 
+import { ArrowUpIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { app } from "@/config/app";
-import { landingMenu } from "@/config/menu";
+import { lounge } from "@/config/app";
 import { Container } from "@/components/ui/container";
 import { LocaleSwitcher } from "@/components/layout/locale-switcher";
 
 export function SiteFooter() {
   const t = useTranslations("layout.footer");
-  const tNav = useTranslations("layout.navigation.items");
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-border border-t">
-      <Container className="grid gap-10 py-10 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-start">
-        <div className="flex max-w-md flex-col gap-3">
-          <a href="#top" className="flex w-fit items-center gap-3 font-semibold">
-            <span className="bg-primary text-primary-foreground flex size-9 items-center justify-center rounded-md text-sm">
-              TL
+    <footer className="relative w-full">
+      <Container className="text-muted-foreground relative flex flex-col items-center gap-10 py-10 text-sm lg:flex-row lg:justify-between lg:py-16">
+        <div className="mt-16 flex flex-col items-center gap-2 text-center lg:mt-0 lg:items-start">
+          <div className="flex flex-col items-center gap-2 lg:flex-row lg:gap-10">
+            <span className="text-muted-foreground lg:text-foreground text-xs font-medium uppercase">
+              {t("copyright", {
+                year: currentYear,
+              })}
             </span>
-            <span>{app.site.name}</span>
-          </a>
-          <p className="text-muted-foreground text-sm leading-6">{t("description")}</p>
-          <p className="text-muted-foreground text-sm">
-            {t("copyright", {
-              year: currentYear,
-              company: app.site.name,
-            })}
-          </p>
-        </div>
-
-        <div className="grid gap-8 sm:grid-cols-[auto_auto_auto]">
-          <nav aria-label={t("navigationLabel")} className="flex flex-col gap-3">
-            <p className="text-sm font-semibold">{t("navigationTitle")}</p>
-            <div className="flex flex-col gap-2">
-              {landingMenu.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  className="text-muted-foreground hover:text-foreground text-sm transition-colors"
-                >
-                  {tNav(item.labelKey)}
-                </a>
-              ))}
-            </div>
-          </nav>
-
-          <div className="flex flex-col gap-3">
-            <p className="text-sm font-semibold">{t("contactTitle")}</p>
-            <div className="flex flex-col gap-2">
-              <a
-                href={t("emailHref")}
-                className="text-muted-foreground hover:text-foreground text-sm transition-colors"
-              >
-                {t("email")}
-              </a>
-              <p className="text-muted-foreground text-sm">{t("location")}</p>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-3">
-            <p className="text-sm font-semibold">{t("languageTitle")}</p>
-            <LocaleSwitcher />
+            <span className="text-muted-foreground lg:text-foreground text-xs font-medium uppercase">
+              {t("rights")}
+            </span>
           </div>
         </div>
+
+        <LocaleSwitcher />
+      </Container>
+
+      <Container className="flex items-center justify-center pb-6">
+        <p className="max-w-sm text-center text-sm leading-6">
+          {t("operatorInfo")}: <br /> {lounge.operator.company}, <br /> {lounge.operator.address},{" "}
+          <br />
+          {t("companyId", {
+            ico: lounge.operator.ico,
+          })}
+        </p>
       </Container>
     </footer>
   );

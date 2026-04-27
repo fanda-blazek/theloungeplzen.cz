@@ -1,0 +1,127 @@
+{
+  "common": {
+    "error": {
+      "eyebrow": "Fehler",
+      "title": "Etwas ist schiefgelaufen",
+      "description": "Auf dieser Seite ist ein unerwarteter Fehler aufgetreten.",
+      "retry": "Erneut versuchen"
+    },
+    "localeSwitcher": {
+      "label": "Sprache ändern",
+      "locale": "{locale, select, cs {Čeština} en {English} de {Deutsch} ru {Русский} other {Unbekannt}}"
+    },
+    "notFound": {
+      "code": "404",
+      "title": "Nicht gefunden",
+      "description": "Die gesuchte Seite konnte nicht gefunden werden.",
+      "goHome": "Zur Startseite"
+    }
+  },
+  "layout": {
+    "metadata": {
+      "title": "The Lounge Pilsen",
+      "description": "The Lounge - Shisha-Bar, in der Sie aus einer reichen Auswahl an Wasserpfeifen und Getränken wählen können. Sie finden uns im historischen Zentrum von Pilsen, nur wenige Schritte vom Platz der Republik entfernt."
+    },
+    "header": {
+      "homeAriaLabel": "Startseite",
+      "phoneAriaLabel": "Für Reservierung anrufen",
+      "menu": {
+        "openAriaLabel": "Menü öffnen",
+        "title": "Hauptnavigation",
+        "close": "Menü schließen"
+      }
+    },
+    "navigation": {
+      "items": {
+        "about": "Über uns",
+        "offerings": "Angebot",
+        "openingHours": "Öffnungszeiten",
+        "address": "Adresse",
+        "contact": "Kontakt"
+      }
+    },
+    "footer": {
+      "copyright": "© {year} The Lounge",
+      "rights": "Alle Rechte vorbehalten",
+      "operatorInfo": "Informationen zum Betreiber",
+      "companyId": "IdNr.: {ico}",
+      "scrollTop": "Nach oben"
+    }
+  },
+  "pages": {
+    "home": {
+      "hero": {
+        "addressAriaLabel": "Adresse auf der Karte anzeigen",
+        "title": "The Lounge<break></break>Pilsen",
+        "scrollDown": "Runterscrollen",
+        "imageAlt": "Interieur der Shisha-Bar The Lounge Pilsen"
+      },
+      "about": {
+        "description": "Erleben Sie unvergessliche Momente in der Shisha-Bar The Lounge, die Sie nicht nur mit ihrem Interieur, sondern auch mit einer reichen Auswahl an Wasserpfeifen und Getränken begeistern wird. Sie finden uns im historischen Zentrum von Pilsen, nur wenige Schritte vom Platz der Republik entfernt (náměstí Republiky).",
+        "features": {
+          "wifi": "Gratis Wi-fi",
+          "card": "Kartenzahlungen",
+          "cash": "Zahlungen in bar"
+        }
+      },
+      "offerings": {
+        "food": {
+          "title": "<highlight>Hot Dogs</highlight> und Pommes",
+          "description": "Große Auswahl an Hot Dogs und Pommes. Laden Sie unser Menü herunter und sehen Sie sich unser komplettes Angebot an.",
+          "action": "Menü herunterladen",
+          "imageAlt": "Speisen im The Lounge"
+        },
+        "hookah": {
+          "title": "<highlight>Wasserpfeifen</highlight> mit schwarzem und hellem Tabak",
+          "description": "Premium-Tabake von Darkside, Element, Tanger. Sie haben viele Geschmacksrichtungen zur Auswahl.",
+          "badges": {
+            "light": "Leichter Tabak",
+            "dark": "Schwarzer Tabak"
+          },
+          "imageAlt": "Interieur von The Lounge mit Wasserpfeifen"
+        },
+        "alcohol": {
+          "title": "<highlight>Premium-Sorten</highlight> von Alkohol und Weinen",
+          "description": "Von billiger bis teurer Rum, Whiskey, Gin, Wodka und andere Spirituosen aller Art. Dazu gibt es südafrikanische Premiumweine der Marke Phant.",
+          "badges": {
+            "alcohol": "Erstklassiger Alkohol",
+            "wine": "Qualitätsweine"
+          },
+          "imageAlt": "Bar und Alkoholauswahl im The Lounge"
+        },
+        "drinks": {
+          "title": "<highlight>Cocktails</highlight> und hausgemachte Limonaden",
+          "description": "Auswahl aus über 30 der besten Cocktails, Variationsmöglichkeit. Hochwertige, dicke hausgemachte Limonaden, die Sie sonst nirgendwo bekommen.",
+          "badges": {
+            "lemonades": "Hausgemachte Limonaden",
+            "cocktails": "Cocktails"
+          },
+          "imageAlt": "Cocktails und hausgemachte Limonaden im The Lounge"
+        }
+      },
+      "openingHours": {
+        "title": "Öffnungszeiten",
+        "monday": "Montag",
+        "tuesday": "Dienstag",
+        "wednesday": "Mittwoch",
+        "thursday": "Donnerstag",
+        "friday": "Freitag",
+        "saturday": "Samstag",
+        "sunday": "Sonntag"
+      },
+      "contact": {
+        "title": "Kontaktiere uns",
+        "address": "Adresse",
+        "addressAction": "Navigieren",
+        "phone": "Telefon / Reservierung",
+        "phoneAction": "Anrufen",
+        "mapTitle": "Karte der Adresse The Lounge"
+      },
+      "follow": {
+        "title": "Folge uns",
+        "instagramAriaLabel": "Instagram The Lounge",
+        "facebookAriaLabel": "Facebook The Lounge"
+      }
+    }
+  }
+}
