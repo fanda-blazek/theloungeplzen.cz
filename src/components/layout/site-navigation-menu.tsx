@@ -13,7 +13,7 @@ export function SiteNavigationMenu({ className, linkClassName }: SiteNavigationM
   const t = useTranslations("layout.navigation.items");
 
   return (
-    <ul className={cn("flex items-center gap-6 2xl:gap-8", className)}>
+    <ul className={cn("flex items-center gap-6", className)}>
       {landingMenu.map((item) => (
         <li key={item.labelKey}>
           <a

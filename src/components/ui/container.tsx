@@ -19,7 +19,7 @@ export const containerVariants = cva(
         "2xl": "[--container-max-width:var(--breakpoint-2xl)]", // 96rem (1536px)
         prose: "[--container-max-width:65ch]", // ~65 characters
         full: "[--container-max-width:100%]", // 100% width
-        default: "[--container-max-width:var(--breakpoint-xl)]", // Default: --breakpoint-xl -> 80rem (1280px)
+        default: "[--container-max-width:var(--breakpoint-md)]", // Default: --breakpoint-xl -> 80rem (1280px)
       },
     },
     defaultVariants: {

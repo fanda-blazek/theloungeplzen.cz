@@ -72,7 +72,7 @@ export function SiteHeader() {
 
         <nav
           aria-label={t("menu.title")}
-          className="hidden flex-1 items-center justify-end gap-4 xl:flex"
+          className="hidden flex-1 items-center justify-end gap-6 xl:flex"
         >
           <SiteNavigationMenu />
           <LocaleSwitcher />

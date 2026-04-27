@@ -55,7 +55,10 @@ function LocaleSwitcherContent({ className = "" }: { className?: string }) {
   return (
     <Select value={locale} onValueChange={onValueChange} disabled={isPending}>
       <SelectTrigger
-        className={cn("min-w-32 rounded-full data-[size=default]:h-10", className)}
+        className={cn(
+          "min-w-32 rounded-full bg-card/90 backdrop-blur-md data-[size=default]:h-10",
+          className
+        )}
         aria-label={t("label")}
       >
         <GlobeIcon aria-hidden="true" className="text-muted-foreground" />
@@ -76,5 +79,5 @@ function LocaleSwitcherContent({ className = "" }: { className?: string }) {
 }
 
 function LocaleSwitcherSkeleton({ className = "" }: { className?: string }) {
-  return <Skeleton className={cn("h-10 min-w-32 rounded-full", className)} />;
+  return <Skeleton className={cn("h-10 min-w-32 rounded-full bg-card/90", className)} />;
 }
