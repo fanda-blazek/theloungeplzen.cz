@@ -21,6 +21,32 @@
     "metadata": {
       "title": "The Lounge Plzeň",
       "description": "A stylish lounge bar in Pilsen for evenings, celebrations, and private events."
+    },
+    "header": {
+      "homeAriaLabel": "Home page",
+      "menu": {
+        "openAriaLabel": "Open menu",
+        "title": "Menu",
+        "close": "Close menu"
+      }
+    },
+    "navigation": {
+      "items": {
+        "home": "Home",
+        "experience": "Experience",
+        "reservation": "Reservation"
+      }
+    },
+    "footer": {
+      "description": "An intimate lounge in Pilsen for drinks, meetups, and private events.",
+      "copyright": "Copyright © {year} {company}. All rights reserved.",
+      "navigationLabel": "Footer navigation",
+      "navigationTitle": "Menu",
+      "contactTitle": "Contact",
+      "languageTitle": "Language",
+      "email": "info@theloungeplzen.cz",
+      "emailHref": "mailto:info@theloungeplzen.cz",
+      "location": "Pilsen, Czech Republic"
     }
   },
   "pages": {

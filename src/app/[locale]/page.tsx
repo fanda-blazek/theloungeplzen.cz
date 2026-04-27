@@ -13,8 +13,8 @@ import {
   HeroTitle,
 } from "@/components/ui/hero";
 import { PatternGrid } from "@/components/ui/patterns";
-import { LocaleSwitcher } from "@/components/layout/locale-switcher";
-import { app } from "@/config/app";
+import { SiteFooter } from "@/components/layout/site-footer";
+import { SiteHeader } from "@/components/layout/site-header";
 import OgImage from "@/assets/images/og-image.jpg";
 
 export default async function Page({ params }: PageProps<"/[locale]">) {
@@ -44,20 +44,9 @@ export default async function Page({ params }: PageProps<"/[locale]">) {
       icon: CalendarDaysIcon,
     },
   ];
-
   return (
     <main className="relative min-h-dvh overflow-hidden">
-      <header className="absolute inset-x-0 top-0 z-20">
-        <Container className="flex h-20 items-center justify-between gap-6">
-          <a href="#top" className="flex items-center gap-3 font-semibold">
-            <span className="bg-primary text-primary-foreground flex size-9 items-center justify-center rounded-md text-sm">
-              TL
-            </span>
-            <span>{app.site.name}</span>
-          </a>
-          <LocaleSwitcher />
-        </Container>
-      </header>
+      <SiteHeader />
 
       <Hero id="top" className="from-muted/50 bg-linear-0">
         <HeroBackground>
@@ -150,6 +139,8 @@ export default async function Page({ params }: PageProps<"/[locale]">) {
           </Button>
         </div>
       </Container>
+
+      <SiteFooter />
     </main>
   );
 }

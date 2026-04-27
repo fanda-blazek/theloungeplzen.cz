@@ -21,6 +21,32 @@
     "metadata": {
       "title": "The Lounge Plzeň",
       "description": "Stylový lounge bar v Plzni pro večery, oslavy a soukromé akce."
+    },
+    "header": {
+      "homeAriaLabel": "Domovská stránka",
+      "menu": {
+        "openAriaLabel": "Otevřít menu",
+        "title": "Menu",
+        "close": "Zavřít menu"
+      }
+    },
+    "navigation": {
+      "items": {
+        "home": "Úvod",
+        "experience": "Zážitek",
+        "reservation": "Rezervace"
+      }
+    },
+    "footer": {
+      "description": "Komorní lounge v Plzni pro drinky, setkání a soukromé akce.",
+      "copyright": "Copyright © {year} {company}. Všechna práva vyhrazena.",
+      "navigationLabel": "Navigace v patičce",
+      "navigationTitle": "Menu",
+      "contactTitle": "Kontakt",
+      "languageTitle": "Jazyk",
+      "email": "info@theloungeplzen.cz",
+      "emailHref": "mailto:info@theloungeplzen.cz",
+      "location": "Plzeň, Česká republika"
     }
   },
   "pages": {
