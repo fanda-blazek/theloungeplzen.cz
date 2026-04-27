@@ -54,21 +54,23 @@ export function SiteHeader() {
           </div>
         </div>
 
-        <Link
-          href="/"
-          className="absolute top-1/2 left-1/2 z-10 flex h-12 w-28 -translate-x-1/2 -translate-y-1/2 items-center justify-center"
-          aria-label={t("homeAriaLabel")}
-        >
-          <Image
-            src="/brand.svg"
-            alt=""
-            width="112"
-            height="48"
-            aria-hidden="true"
-            unoptimized
-            className="size-full object-contain"
-          />
-        </Link>
+        <div className="flex w-28 items-center justify-center">
+          <Link
+            href="/"
+            className="flex h-12 w-28 items-center justify-center"
+            aria-label={t("homeAriaLabel")}
+          >
+            <Image
+              src="/brand.svg"
+              alt=""
+              width="112"
+              height="48"
+              aria-hidden="true"
+              unoptimized
+              className="size-full object-contain"
+            />
+          </Link>
+        </div>
 
         <nav
           aria-label={t("menu.title")}
