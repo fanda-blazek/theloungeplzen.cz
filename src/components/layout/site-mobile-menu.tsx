@@ -35,7 +35,9 @@ export function SiteMobileMenu() {
         </Button>
         <MobileMenuContent className="flex min-h-[calc(100dvh-2rem)] flex-col gap-10 py-8">
           <MobileMenuHeader>
-            <MobileMenuTitle className="text-primary uppercase">{t("menu.title")}</MobileMenuTitle>
+            <MobileMenuTitle className="text-primary text-center uppercase">
+              {t("menu.title")}
+            </MobileMenuTitle>
           </MobileMenuHeader>
 
           <nav aria-label={t("menu.title")}>
@@ -72,7 +74,7 @@ export function SiteMobileMenu() {
           </div>
 
           <MobileMenuFooter className="items-center gap-6">
-            <div className="flex flex-wrap justify-center gap-5">
+            <div className="flex flex-col justify-center gap-2">
               {lounge.socials.map((social) => (
                 <a
                   key={social.id}

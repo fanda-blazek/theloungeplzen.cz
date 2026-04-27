@@ -113,8 +113,12 @@
         "title": "Kontaktujte nás",
         "address": "Adresa",
         "addressAction": "Navigovat",
+        "addressCopyAction": "Zkopírovat adresu",
+        "addressCopied": "Adresa byla zkopírována.",
         "phone": "Telefon / rezervace",
         "phoneAction": "Zavolat",
+        "phoneCopyAction": "Zkopírovat telefon",
+        "phoneCopied": "Telefon byl zkopírován.",
         "mapTitle": "Mapa adresy The Lounge"
       },
       "follow": {

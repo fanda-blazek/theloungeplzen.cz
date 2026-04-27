@@ -113,8 +113,12 @@
         "title": "Contact us",
         "address": "Address",
         "addressAction": "Navigate",
+        "addressCopyAction": "Copy address",
+        "addressCopied": "Address copied.",
         "phone": "Phone / reservations",
         "phoneAction": "Call",
+        "phoneCopyAction": "Copy phone number",
+        "phoneCopied": "Phone number copied.",
         "mapTitle": "The Lounge address map"
       },
       "follow": {

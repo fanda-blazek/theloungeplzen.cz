@@ -6,6 +6,7 @@ import { hasLocale, type Locale } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
+import { Toaster } from "@/components/ui/sonner";
 import { app } from "@/config/app";
 import { getPathname } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
@@ -110,6 +111,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
       <body className="min-h-dvh antialiased">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <div className="relative isolate min-h-dvh">{children}</div>
+          <Toaster position="bottom-center" />
         </NextIntlClientProvider>
       </body>
     </html>

@@ -15,6 +15,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { IconBrand } from "@/components/ui/icon-brand";
+import { ContactCopyButton } from "@/components/layout/contact-copy-button";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { lounge } from "@/config/app";
@@ -330,44 +331,60 @@ export default async function Page({ params }: PageProps<"/[locale]">) {
             </h2>
             <div className="divide-border mt-16 divide-y md:mt-24">
               <div className="flex items-center justify-between gap-4 pb-8">
-                <div className="flex flex-col gap-2">
+                <div className="flex min-w-0 flex-col gap-2">
                   <h3 className="font-heading text-lg font-bold text-white uppercase">
                     {t("contact.address")}
                   </h3>
-                  <span className="font-serif text-lg font-light">{lounge.address}</span>
+                  <span className="font-serif text-lg font-light break-words">
+                    {lounge.address}
+                  </span>
                 </div>
-                <Button
-                  variant="secondary"
-                  size="icon-lg"
-                  nativeButton={false}
-                  render={
-                    <a
-                      href={lounge.map.href}
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label={t("contact.addressAction")}
-                    />
-                  }
-                >
-                  <NavigationIcon aria-hidden="true" />
-                </Button>
+                <div className="flex shrink-0 items-center gap-2">
+                  <ContactCopyButton
+                    value={lounge.address}
+                    ariaLabel={t("contact.addressCopyAction")}
+                    successMessage={t("contact.addressCopied")}
+                  />
+                  <Button
+                    variant="secondary"
+                    size="icon-lg"
+                    nativeButton={false}
+                    render={
+                      <a
+                        href={lounge.map.href}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={t("contact.addressAction")}
+                      />
+                    }
+                  >
+                    <NavigationIcon aria-hidden="true" />
+                  </Button>
+                </div>
               </div>
 
               <div className="flex items-center justify-between gap-4 pt-8">
-                <div className="flex flex-col gap-2">
+                <div className="flex min-w-0 flex-col gap-2">
                   <h3 className="font-heading text-lg font-bold text-white uppercase">
                     {t("contact.phone")}
                   </h3>
                   <span className="font-serif text-lg font-light">{lounge.phone.label}</span>
                 </div>
-                <Button
-                  variant="secondary"
-                  size="icon-lg"
-                  nativeButton={false}
-                  render={<a href={lounge.phone.href} aria-label={t("contact.phoneAction")} />}
-                >
-                  <PhoneIcon aria-hidden="true" />
-                </Button>
+                <div className="flex shrink-0 items-center gap-2">
+                  <ContactCopyButton
+                    value={lounge.phone.label}
+                    ariaLabel={t("contact.phoneCopyAction")}
+                    successMessage={t("contact.phoneCopied")}
+                  />
+                  <Button
+                    variant="secondary"
+                    size="icon-lg"
+                    nativeButton={false}
+                    render={<a href={lounge.phone.href} aria-label={t("contact.phoneAction")} />}
+                  >
+                    <PhoneIcon aria-hidden="true" />
+                  </Button>
+                </div>
               </div>
             </div>
           </Container>

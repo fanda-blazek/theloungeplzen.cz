@@ -1,0 +1,87 @@
+"use client";
+
+import type { ComponentProps, MouseEvent, ReactNode } from "react";
+import { useEffect, useState } from "react";
+
+export function useClipboard(timeout: number = 2000) {
+  const [isCopied, setIsCopied] = useState(false);
+
+  useEffect(() => {
+    if (!isCopied) {
+      return;
+    }
+
+    const timeoutId = setTimeout(() => {
+      Promise.resolve().then(() => setIsCopied(false));
+    }, timeout);
+
+    return () => clearTimeout(timeoutId);
+  }, [isCopied, timeout]);
+
+  async function copy(text: string): Promise<boolean> {
+    try {
+      await window.navigator.clipboard.writeText(text);
+      setIsCopied(true);
+      return true;
+    } catch (error) {
+      console.error("Failed to copy to clipboard:", error);
+      return false;
+    }
+  }
+
+  return { isCopied, copy };
+}
+
+export type CopyButtonRenderProps = {
+  isCopied: boolean;
+};
+
+export type CopyButtonProps = Omit<ComponentProps<"button">, "children" | "onCopy"> & {
+  toCopy: string;
+  timeout?: number;
+  onCopy?: (value: string) => void;
+  children?: ReactNode | ((props: CopyButtonRenderProps) => ReactNode);
+};
+
+export function CopyButton({
+  toCopy,
+  timeout = 2000,
+  onCopy,
+  onClick,
+  children,
+  "aria-label": ariaLabel,
+  ...props
+}: CopyButtonProps) {
+  const { isCopied, copy } = useClipboard(timeout);
+
+  const renderProps: CopyButtonRenderProps = { isCopied };
+
+  function renderChildren() {
+    if (typeof children === "function") {
+      return children(renderProps);
+    }
+
+    return children;
+  }
+
+  async function handleClick(event: MouseEvent<HTMLButtonElement>) {
+    const isCopySuccessful = await copy(toCopy);
+
+    if (isCopySuccessful) {
+      onCopy?.(toCopy);
+    }
+
+    onClick?.(event);
+  }
+
+  return (
+    <button
+      type="button"
+      aria-label={ariaLabel ?? (isCopied ? "Copied" : "Copy to clipboard")}
+      {...props}
+      onClick={handleClick}
+    >
+      {renderChildren()}
+    </button>
+  );
+}

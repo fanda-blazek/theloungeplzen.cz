@@ -113,8 +113,12 @@
         "title": "Kontaktiere uns",
         "address": "Adresse",
         "addressAction": "Navigieren",
+        "addressCopyAction": "Adresse kopieren",
+        "addressCopied": "Adresse wurde kopiert.",
         "phone": "Telefon / Reservierung",
         "phoneAction": "Anrufen",
+        "phoneCopyAction": "Telefonnummer kopieren",
+        "phoneCopied": "Telefonnummer wurde kopiert.",
         "mapTitle": "Karte der Adresse The Lounge"
       },
       "follow": {

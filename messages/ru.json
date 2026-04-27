@@ -113,8 +113,12 @@
         "title": "Связаться с нами",
         "address": "Адрес",
         "addressAction": "Навигация",
+        "addressCopyAction": "Скопировать адрес",
+        "addressCopied": "Адрес скопирован.",
         "phone": "Телефон / бронирование",
         "phoneAction": "Позвонить",
+        "phoneCopyAction": "Скопировать телефон",
+        "phoneCopied": "Телефон скопирован.",
         "mapTitle": "Карта адреса The Lounge"
       },
       "follow": {
