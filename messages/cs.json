@@ -1,0 +1,62 @@
+{
+  "common": {
+    "error": {
+      "eyebrow": "Chyba",
+      "title": "Něco se pokazilo",
+      "description": "Na této stránce došlo k neočekávané chybě.",
+      "retry": "Zkusit znovu"
+    },
+    "localeSwitcher": {
+      "label": "Změnit jazyk",
+      "locale": "{locale, select, cs {Čeština} en {English} other {Neznámý jazyk}}"
+    },
+    "notFound": {
+      "code": "404",
+      "title": "Nenalezeno",
+      "description": "Stránku, kterou hledáte, se nepodařilo najít.",
+      "goHome": "Přejít na domovskou stránku"
+    }
+  },
+  "layout": {
+    "metadata": {
+      "title": "The Lounge Plzeň",
+      "description": "Stylový lounge bar v Plzni pro večery, oslavy a soukromé akce."
+    }
+  },
+  "pages": {
+    "home": {
+      "hero": {
+        "eyebrow": "Lounge bar v Plzni",
+        "title": "Večer, který má<break></break>vlastní tempo",
+        "description": "The Lounge Plzeň je komorní prostor pro drinky, setkání a soukromé akce. Přijďte na pohodový večer nebo si domluvte rezervaci pro vaši skupinu.",
+        "primaryAction": "Rezervovat místo",
+        "secondaryAction": "Prohlédnout prostor",
+        "imageAlt": "Atmosféra lounge baru The Lounge Plzeň"
+      },
+      "experience": {
+        "eyebrow": "Zážitek",
+        "title": "Jednoduchý web, který představí atmosféru podniku bez zbytečné aplikace navíc."
+      },
+      "highlights": {
+        "atmosphere": {
+          "title": "Atmosféra",
+          "description": "Klidnější lounge prostředí pro dlouhé večery, oslavy i neformální schůzky."
+        },
+        "location": {
+          "title": "Plzeň",
+          "description": "Lokální podnik s jasnou prezentací, kontaktem a jazykovými verzemi."
+        },
+        "events": {
+          "title": "Akce",
+          "description": "Prostor připravený pro rezervace, soukromé oslavy a menší skupiny."
+        }
+      },
+      "reservation": {
+        "title": "Domluvte si rezervaci",
+        "description": "Landing page je připravená pro doplnění aktuálního kontaktu, otevírací doby a rezervačního odkazu.",
+        "action": "Napsat e-mail",
+        "href": "mailto:info@theloungeplzen.cz"
+      }
+    }
+  }
+}

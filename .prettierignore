@@ -2,18 +2,9 @@ node_modules
 .pnp
 .pnp.*
 .yarn
-.turbo
-**/.turbo
-coverage
-playwright-report
-test-results
 .next
 out
-.react-email
 build
-apps/pocketbase/pb_data
-apps/pocketbase/pocketbase
-apps/pocketbase/pocketbase.exe
 .DS_Store
 .env*
 !.env*.example
@@ -21,6 +12,3 @@ apps/pocketbase/pocketbase.exe
 *.tsbuildinfo
 next-env.d.ts
 messages/*.d.json.ts
-apps/web/messages/*.d.json.ts
-package-lock.json
-pnpm-lock.yaml

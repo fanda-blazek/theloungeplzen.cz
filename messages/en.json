@@ -1,0 +1,62 @@
+{
+  "common": {
+    "error": {
+      "eyebrow": "Error",
+      "title": "Something went wrong",
+      "description": "An unexpected error interrupted this page.",
+      "retry": "Try again"
+    },
+    "localeSwitcher": {
+      "label": "Change language",
+      "locale": "{locale, select, cs {Čeština} en {English} other {Unknown}}"
+    },
+    "notFound": {
+      "code": "404",
+      "title": "Not found",
+      "description": "We could not find the page you were looking for.",
+      "goHome": "Go to Home page"
+    }
+  },
+  "layout": {
+    "metadata": {
+      "title": "The Lounge Plzeň",
+      "description": "A stylish lounge bar in Pilsen for evenings, celebrations, and private events."
+    }
+  },
+  "pages": {
+    "home": {
+      "hero": {
+        "eyebrow": "Lounge bar in Pilsen",
+        "title": "An evening with<break></break>its own rhythm",
+        "description": "The Lounge Plzeň is an intimate space for drinks, meetups, and private events. Stop by for an easy evening or arrange a reservation for your group.",
+        "primaryAction": "Reserve a table",
+        "secondaryAction": "Explore the space",
+        "imageAlt": "The Lounge Plzeň lounge bar atmosphere"
+      },
+      "experience": {
+        "eyebrow": "Experience",
+        "title": "A simple website focused on the venue atmosphere, without unnecessary app layers."
+      },
+      "highlights": {
+        "atmosphere": {
+          "title": "Atmosphere",
+          "description": "A calmer lounge setting for long evenings, celebrations, and informal meetings."
+        },
+        "location": {
+          "title": "Pilsen",
+          "description": "A local venue with clear presentation, contact details, and language versions."
+        },
+        "events": {
+          "title": "Events",
+          "description": "A space ready for reservations, private celebrations, and smaller groups."
+        }
+      },
+      "reservation": {
+        "title": "Arrange a reservation",
+        "description": "The landing page is ready for current contact details, opening hours, and a reservation link.",
+        "action": "Send an email",
+        "href": "mailto:info@theloungeplzen.cz"
+      }
+    }
+  }
+}
